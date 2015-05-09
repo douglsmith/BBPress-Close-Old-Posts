@@ -39,7 +39,7 @@ function bbpress_close_old_topics() {
 			bbp_the_topic();
 			$topic_id = bbp_get_topic_id();
 			$last_active = strtotime( get_post_meta( $topic_id, '_bbp_last_active_time', true ) );
-			if ($last_active < strtotime( '-10 days') )
+			if ($last_active < strtotime( '-90 days') )
 				bbp_close_topic( $topic_id );
 		}
 }
