@@ -42,4 +42,3 @@ function bbpress_close_old_topics() {
 				bbp_close_topic( $topic_id );
 		}
 }
-?>
